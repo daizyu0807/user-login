@@ -1,12 +1,30 @@
 const express = require('express')
 const port = 3000
 const exphbs = require('express-handlebars')
+const users = require('./models/users')
 const app = express()
 
 require('./config/mongoose') //引用 mongoose
 
+app.use(express.urlencoded({ extended: true }))
+
 app.get('/', (req, res) => {
   res.render('index')
+})
+
+app.post('/login', (req, res) => {
+  const { email, password} = req.body
+  users.findOne({ $and: [{ email, password}]})
+  .then(user => {
+    if (user) {
+      const firstName = user.firstName
+      console.log(firstName)
+      res.render('logged', {firstName})
+    } else {
+      const errorMs = 'Wrong email or password!'
+      res.render('index', { email, errorMs })
+    }
+  })
 })
 
 // 設定 handlebars

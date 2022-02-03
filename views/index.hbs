@@ -11,6 +11,11 @@
         <label for="floatingPassword">Password</label>
       </div>
       <div class="form-floating">
+        {{#if errorMs}}
+        <div class="alert alert-danger" role="alert">
+          {{errorMs}}
+        </div>
+        {{/if}}
         <button class="btn btn-lg btn-primary " type="submit">Sign in</button>
       </div>
     </form>
