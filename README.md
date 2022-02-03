@@ -1,15 +1,16 @@
 # **user-login**
 
-![GITHUB](# "login-in")
-User Login with Fake email & password to login. 
+![GITHUB](https://github.com/daizyu0807/user-login/blob/9d5da07981d16dc456a335f401850ef16efcad74/user-login.jpg "login-in")
+User Login with email & password.
 
-![GITHUB](# "login-succeed")
-Logged-successful:show your name in welcome page.
+![GITHUB](https://github.com/daizyu0807/user-login/blob/9d5da07981d16dc456a335f401850ef16efcad74/login-successful.jpg "login-succeed")
+Login-successful: Welcome back, {name}!
 
-![GITHUB](# "login-failed")
+![GITHUB](https://github.com/daizyu0807/user-login/blob/9d5da07981d16dc456a335f401850ef16efcad74/login-failed.jpg "login-failed")
 Login-failed: wrong email or password
 
-![GITHUB](# "logout-succeed")
+![GITHUB](https://github.com/daizyu0807/user-login/blob/9d5da07981d16dc456a335f401850ef16efcad74/logout-successful.jpg "logout-succeed")
+Logout-successful: successfully logged out!
 
 ## **Getting Start**
 
