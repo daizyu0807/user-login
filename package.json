@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "standard && echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
     "seed": "node ./models/seeds/usersSeeder.js"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
     "mongoose": "^6.1.8"
